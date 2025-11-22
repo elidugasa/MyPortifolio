@@ -1,0 +1,3 @@
+/* stylelint-disable at-rule-no-unknown */
+@import "tailwindcss";
+/* Nonstandard source paths removed — move these paths to your tailwind.config.js `content` array if needed */

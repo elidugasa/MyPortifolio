@@ -1,0 +1,157 @@
+/* stylelint-disable at-rule-no-unknown */
+@import "tailwindcss";
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    177.6deg,
+    hsl(253, 64%, 4%) 15.3%,
+    hsl(240, 14%, 4%) 91.3%
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white; 
+  font-family: 'Poppins', sans-serif;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+.myLogo {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+#home {
+  background-image: url('assets/MyImage/heroback.png') !important;
+  background-size: cover;              
+  background-repeat: no-repeat;        
+  background-position: right center;  
+  background-color: rgba(0, 0, 0, 0.9);
+  min-height: 100vh;                   
+  width: 100%;                         
+  padding: 20px;
+  margin-bottom: 0;
+  
+}
+@media screen and (max-width: 390px) {
+  #home {
+    background-image:url('/Image/im.png') !important;
+   background-position: center -80px !important;
+
+  }
+  
+}
+.About{
+  margin-top: 4rem;
+padding:15px
+}
+@media screen and (min-width:600px) {
+  .About{
+
+    grid-template-columns: 2fr 3fr !important ;
+  }
+  .project{
+     grid-template-columns: repeat(2, 1fr)  ;
+  }
+  
+}
+@media screen and (min-width:1000px){
+  .project{
+    grid-template-columns: repeat(3, 1fr)  ;
+  }
+}
+@media screen and (max-width:270px){
+  .project a{
+    font-size: 12px !important;
+  }
+
+}
+
+#projects{
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+#projects h2{
+  margin: 1rem;
+}
+#projects .caards{
+  padding:15px 20px;
+}
+.description-trigger:hover + .description-text {
+            max-height: 100px;
+            opacity: 1;
+          }
+          @keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+}
+#contact{
+  padding:1.5rem;
+  margin-top: 4rem;
+}
+.social-media{
+  margin-top: 3rem;
+}
+#profile{
+  padding: 2rem;
+}
+#profile h2{
+  padding-bottom: 20px;
+}
+footer{
+  margin-top: 1rem;
+}
+
