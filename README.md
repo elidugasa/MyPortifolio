@@ -1,16 +1,66 @@
-# React + Vite
+Elias Dugasa — Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and animated personal portfolio website built with React, Tailwind CSS v4, and Framer Motion.
+This portfolio showcases my skills, projects, certificates, and experience as a Frontend Website Developer.
 
-Currently, two official plugins are available:
+🚀 Tech Stack
+Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React (Vite)
 
-## React Compiler
+Tailwind CSS v4 (new atomic + @breakpoint syntax)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Framer Motion (smooth animations)
 
-## Expanding the ESLint configuration
+Lucide Icons / React Icons
+
+Responsive grid layouts
+
+Build Tools
+
+Vite
+
+Tailwind v4 Plugin (@tailwindcss/vite)
+
+🎨 Features
+🌟 Modern & Responsive UI
+
+Fully mobile-friendly design
+
+Supports custom breakpoints with Tailwind v4 (@min-[600px])
+
+Clean, minimal layout
+
+🚀 Interactive Animations
+
+Smooth page animations with Framer Motion
+
+Fade, slide, and stagger effects for hero texts
+
+🎭 Dynamic Hero Section
+
+Smart background switch based on screen size
+
+Large devices → heroback.png
+
+Small devices (<390px) → small-back.png
+
+🧩 Sections Included
+
+Hero (introduction)
+
+About Me
+
+Skills (with percentage bars)
+
+Projects (hover description)
+
+Certificates (image previews)
+
+Education
+
+Contact Section
+
+Responsive Navbar the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
