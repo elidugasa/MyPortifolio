@@ -46,7 +46,7 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="
               mt-10
-              text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
+              text-3xl sm:text-4xl md:text-5xl lg:text-5xl 
               font-bold leading-tight
             "
           >
@@ -83,8 +83,7 @@ export default function Hero() {
               max-w-lg
             "
           >
-            Welcome to my portfolio! I specialize in building beautiful and
-            user-friendly websites that bring ideas to life.
+        Welcome to my portfolio! I create visually appealing and user-friendly websites that turn ideas into real digital experiences.
           </motion.p>
         </motion.div>
       </motion.div>

@@ -9,7 +9,7 @@ import { SiPhp } from "react-icons/si";
 // IMPORT YOUR CERTIFICATE IMAGES
 import cert1 from "../assets/MyImage/myUdemyCertificate.jpg";
 import cert2 from "../assets/MyImage/cetificate.png";
-import cert3 from "../assets/MyImage/img.png";
+import cert3 from "../assets/MyImage/html.png";
 
 export default function MyProfile() {
   const [activeTab, setActiveTab] = useState("skills");
@@ -47,20 +47,21 @@ export default function MyProfile() {
   ];
 
   const education = [
-    "Studing software engineering in Jimma inistitute of technology"
+    "Studying software engineering in Jimma inistitute of technology"
    
   ];
 
   return (
     <section id="profile" className="py-12 bg-gray-900 text-white px-4 sm:px-6">
-      <div className="max-w-5xl mx-auto">
+      <div className="face max-w-5xl mx-auto">
 
-        <h2 className="text-4xl font-bold text-blue-500 mb:10 text-center">
+        <h2 className="text-4xl font-bold text-blue-500 mb-10 text-center">
           My Profile
         </h2>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-16 mb:10">
+       
+        <div className="Tabs flex justify-center gap-6 sm:gap-16 text-[16px] mb-10">
           {[
             { id: "skills", label: "My Skills" },
             { id: "certificates", label: "My Certificates" },
@@ -85,7 +86,7 @@ export default function MyProfile() {
 
           {/* ================ SKILLS WITH PERCENT BAR ================= */}
          {activeTab === "skills" && (
-  <div className="max-w-3xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3">
+  <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-3">
     {skills.map((skill) => (
       <div
         key={skill.name}

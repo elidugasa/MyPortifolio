@@ -85,6 +85,40 @@ padding:15px
   }
 
 }
+@media screen and (max-width:406px){
+  #projects h2{
+    font-size:26px
+  }
+  #projects h3{
+    font-size:18px
+  }
+  #projects p{
+    font-size: 16px !important;
+    align-self: self-start !important;
+  }
+   .buttons a{
+    font-size: 16px !important;
+   }
+
+  #profile{
+    margin: 0;
+    padding: 10px !important;
+  }
+  #profile .face{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .Tabs{
+gap: 4px !important;
+margin-bottom: 10px !important;
+  }
+  .Tabs button{
+     font-size:12px !important; 
+      
+     
+  }
+
+}
 
 #projects{
   margin-bottom: 4rem;

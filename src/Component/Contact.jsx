@@ -136,7 +136,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="w-full py-2 text-sm bg-blue-600 hover:bg-blue-700 transition-colors duration-200 rounded-lg font-semibold text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 focus:ring-offset-gray-800 mt:4 cursor-pointer"
+            className="w-full py-2 text-sm bg-blue-600 hover:bg-blue-700 transition-colors duration-200 rounded-lg font-semibold text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 focus:ring-offset-gray-800 mt-4 cursor-pointer"
           >
             Send Message
           </button>
@@ -163,7 +163,7 @@ export default function Contact() {
           </div>
 
           {/* Social Media Links */}
-          <div className="social-media flex gap-4 pt-4 mt:4!important ">
+          <div className="social-media flex gap-4 pt-4 mt-4">
             {socialLinks.map((social, index) => (
               <a
                 key={index}
