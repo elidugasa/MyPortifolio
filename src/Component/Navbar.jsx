@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "@/assets/MyImage/myLogo.jpg";
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,7 +10,7 @@ export default function Navbar() {
         
         
         <div className="flex items-center gap-2">
-          <img className="h-6 w-14" src={logo} alt="My Portfolio Logo" />
+          <img className="h-6 w-14" src="/Image/myLogo.jpg" alt="My Portfolio Logo" />
         </div>
 
         
