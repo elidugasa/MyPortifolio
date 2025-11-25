@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/MyImage/myLogo.jpg";
+import logo from "@/assets/MyImage/myLogo.jpg";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
