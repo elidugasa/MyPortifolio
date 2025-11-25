@@ -7,7 +7,7 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center md:justify-start bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('../assets/Image/heroback.png')",
+        backgroundImage: "url('../assets/MyImage/heroback.png')",
         backgroundSize: "cover",
         backgroundPosition: "center right",
         backgroundRepeat: "no-repeat",
