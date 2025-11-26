@@ -17,11 +17,22 @@ export default function Contact() {
     }));
   };
 
+  // ✅ Netlify Submit Handler
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Message sent:", formData);
-    alert("✅ Your message has been sent!");
-    setFormData({ name: "", email: "", message: "" });
+
+    const form = e.target;
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        alert("✅ Your message has been sent!");
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch(() => alert("❌ Something went wrong!"));
   };
 
   const contactInfo = [
@@ -96,10 +107,18 @@ export default function Contact() {
       className="py-12 bg-gray-900 text-white flex items-center justify-center px-4 sm:px-6"
     >
       <div className="max-w-4xl w-full grid md:grid-cols-2 gap-6 md:gap-8 items-start">
+
+        {/* ✅ Netlify Enabled Form */}
         <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
           onSubmit={handleSubmit}
           className="bg-gray-800 p-5 rounded-xl shadow-lg space-y-3"
         >
+          {/* ✅ Required Hidden Input */}
+          <input type="hidden" name="form-name" value="contact" />
+
           <h3 className="text-lg font-semibold text-blue-400 mb-1 cursor-pointer">
             Send a Message
           </h3>
@@ -141,7 +160,8 @@ export default function Contact() {
             Send Message
           </button>
         </form>
-        {/* Contact Information Section */}
+
+        {/* Contact Info Section */}
         <div className="space-y-4">
           <div>
             <h2 className="text-2xl font-bold text-blue-500 mb-2">
@@ -162,7 +182,6 @@ export default function Contact() {
             ))}
           </div>
 
-          {/* Social Media Links */}
           <div className="social-media flex gap-4 pt-4 mt-4">
             {socialLinks.map((social, index) => (
               <a
@@ -179,8 +198,6 @@ export default function Contact() {
           </div>
         </div>
 
-        
-        
       </div>
     </section>
   );

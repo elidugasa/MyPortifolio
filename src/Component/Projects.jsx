@@ -20,7 +20,7 @@ export default function Projects() {
         <div className="w-24 h-1 bg-linear-to-r from-blue-500 to-purple-500 mx-auto mt-6 rounded-full"></div>
       </div>
 
-      {/* Projects Grid */}
+   
       <div className="project grid @min-[600px]:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
 
         {ProjectsData.map((project) => (
@@ -40,7 +40,7 @@ export default function Projects() {
               />
               <div className="absolute inset-0 bg-linear-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              {/* Tech Stack Badges */}
+           
               <div className="absolute top-4 right-4 flex gap-2">
                 {project.tech?.slice(0, 3).map((tech, index) => (
                   <span
@@ -55,7 +55,7 @@ export default function Projects() {
 
             {/* Project Content */}
             <div className="relative p-6 z-10">
-              {/* Project Name */}
+             
               <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-blue-400 group-hover:to-purple-400 group-hover:bg-clip-text transition-all duration-300">
                 {project.name}
               </h3>
@@ -73,7 +73,7 @@ export default function Projects() {
                   </svg>
                 </button>
 
-                {/* Tooltip */}
+              
                 {hoveredProject === project.id && (
                   <div 
                     className="absolute bottom-full left-0 right-0 mb-3 p-4 bg-gray-800 border border-blue-500/30 rounded-xl shadow-2xl backdrop-blur-sm z-50 max-h-64 overflow-y-auto"
@@ -114,7 +114,7 @@ export default function Projects() {
               </div>
             </div>
 
-            {/* Hover Border Animation */}
+            
             <div className="absolute inset-0 rounded-3xl bg-linear-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10">
               <div className="absolute inset-px rounded-3xl bg-linear-to-br from-gray-800 to-gray-900"></div>
             </div>

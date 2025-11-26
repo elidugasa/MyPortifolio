@@ -13,10 +13,10 @@ export default function Hero() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Dark overlay */}
+     
       <div className="absolute inset-0 bg-black/40"></div>
 
-      {/* Content */}
+      
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export default function Hero() {
           text-center md:text-left
         "
       >
-        {/* Stagger Animation */}
+       
         <motion.div
           initial="hidden"
           animate="visible"
