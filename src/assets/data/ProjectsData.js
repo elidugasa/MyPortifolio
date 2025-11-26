@@ -37,10 +37,11 @@
     codeUrl: "https://elidugasa.github.io/news-homepage/",
     image: "/Image/news-image.png",
   },
+
 {
   id: 5,
   name: "vanlife",
-  description: "Vanlife is a modern React Vite web application inspired by the freedom of road travel. Our mission is to make your adventures easy and exciting by helping you find the perfect van rental for your next trip.",
+  description: "on progress..  Vanlife is a modern React Vite web application inspired by the freedom of road travel. Our mission is to make your adventures easy and exciting by helping you find the perfect van rental for your next trip.",
   demoUrl: "https://vanlifetravelweb.netlify.app/",
   codeUrl: "https://github.com/elidugasa/vanlife",
   image: "/Image/vanlife-image.png",

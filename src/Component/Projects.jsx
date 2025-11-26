@@ -7,17 +7,17 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen px-6 md:px-16 py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-slate-900 text-white"
+      className="min-h-screen px-6 md:px-16 py-20 bg-linear-to-br from-gray-900 via-slate-900 to-slate-900 text-white"
     >
       {/* Header */}
       <div className="text-center mb-16">
-        <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
+        <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-linear-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
           My Projects
         </h2>
         <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-          A collection of my latest work and creative endeavors
+          A collection of my latest work and creative endeavors.  others are in progress youtube clone,...
         </p>
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-6 rounded-full"></div>
+        <div className="w-24 h-1 bg-linear-to-r from-blue-500 to-purple-500 mx-auto mt-6 rounded-full"></div>
       </div>
 
       {/* Projects Grid */}
@@ -26,10 +26,10 @@ export default function Projects() {
         {ProjectsData.map((project) => (
           <div
             key={project.id}
-            className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 border border-gray-700 hover:border-blue-500/30"
+            className="group relative bg-linear-to-br from-gray-800 to-gray-900 rounded-3xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 border border-gray-700 hover:border-blue-500/30"
           >
            
-            <div className="caards  absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="caards  absolute inset-0 bg-linear-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             
             {/* Project Image */}
             <div className="relative overflow-hidden">
@@ -38,7 +38,7 @@ export default function Projects() {
                 alt={project.name}
                 className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
               {/* Tech Stack Badges */}
               <div className="absolute top-4 right-4 flex gap-2">
@@ -56,7 +56,7 @@ export default function Projects() {
             {/* Project Content */}
             <div className="relative p-6 z-10">
               {/* Project Name */}
-              <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 group-hover:bg-clip-text transition-all duration-300">
+              <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-blue-400 group-hover:to-purple-400 group-hover:bg-clip-text transition-all duration-300">
                 {project.name}
               </h3>
 
@@ -93,7 +93,7 @@ export default function Projects() {
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold sm:py-3 sm:px-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/30"
+                  className="flex-1 flex items-center justify-center gap-2 bg-linear-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold sm:py-3 sm:px-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/30"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -115,8 +115,8 @@ export default function Projects() {
             </div>
 
             {/* Hover Border Animation */}
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10">
-              <div className="absolute inset-px rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900"></div>
+            <div className="absolute inset-0 rounded-3xl bg-linear-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10">
+              <div className="absolute inset-px rounded-3xl bg-linear-to-br from-gray-800 to-gray-900"></div>
             </div>
           </div>
         ))}

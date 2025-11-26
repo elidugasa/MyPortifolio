@@ -1,4 +1,4 @@
-// src/components/MyProfile.jsx
+
 import React, { useState } from "react";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGitAlt } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
@@ -6,7 +6,7 @@ import { SiCplusplus } from "react-icons/si";
 import { FaJava, FaPhp } from "react-icons/fa";
 import { SiPhp } from "react-icons/si";
 
-// IMPORT YOUR CERTIFICATE IMAGES
+
 import cert1 from "../assets/MyImage/myUdemyCertificate.jpg";
 import cert2 from "../assets/MyImage/cetificate.png";
 import cert3 from "../assets/MyImage/html.png";
@@ -43,7 +43,7 @@ export default function MyProfile() {
   const certificates = [
     { title: "Full-Stack Development Certificate", image: cert1 },
     { title: "Advanced JavaScript Certificate", image: cert2 },
-    { title: "Tailwind Modern UI Certificate", image: cert3 },
+    { title: "HTMl essentials", image: cert3 },
   ];
 
   const education = [
@@ -84,7 +84,7 @@ export default function MyProfile() {
 
         <div className="mt-6">
 
-          {/* ================ SKILLS WITH PERCENT BAR ================= */}
+       
          {activeTab === "skills" && (
   <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-3">
     {skills.map((skill) => (
