@@ -40,10 +40,10 @@ export default function Contact() {
       icon: <FaEnvelope className="text-blue-400 text-sm" />,
       content: (
         <a
-          href="mailto:eliasdugasa57@gmail.com"
+          href="mailto:dugasajavs1@gmail.com"
           className="hover:text-blue-400 transition-colors duration-200 text-sm"
         >
-          eliasdugasa57@gmail.com
+         dugasajavs1@gmail.com
         </a>
       ),
     },
