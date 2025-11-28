@@ -26,7 +26,7 @@ export default function Projects() {
         {ProjectsData.map((project) => (
           <div
             key={project.id}
-            className="group relative bg-linear-to-br from-gray-800 to-gray-900 rounded-3xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 border border-gray-700 hover:border-blue-500/30"
+            className="caaards group  relative bg-linear-to-br from-gray-800 to-gray-900 rounded-3xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 border border-gray-700 hover:border-blue-500/30 cursor-pointer"
           >
            
             <div className="caards  absolute inset-0 bg-linear-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

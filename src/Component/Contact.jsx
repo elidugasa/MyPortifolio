@@ -19,21 +19,27 @@ export default function Contact() {
 
   // ✅ Netlify Submit Handler
   const handleSubmit = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const form = e.target;
+  const form = e.target;
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+  const encodedData = new URLSearchParams({
+    "form-name": form.getAttribute("name"),
+    ...formData,
+  }).toString();
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encodedData,
+  })
+    .then(() => {
+      alert("✅ Your message has been sent!");
+      setFormData({ name: "", email: "", message: "" });
     })
-      .then(() => {
-        alert("✅ Your message has been sent!");
-        setFormData({ name: "", email: "", message: "" });
-      })
-      .catch(() => alert("❌ Something went wrong!"));
-  };
+    .catch(() => alert("❌ Something went wrong!"));
+};
+
 
   const contactInfo = [
     {

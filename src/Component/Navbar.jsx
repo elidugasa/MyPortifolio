@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <div className="fixed w-full h-12 items-center top-0 left-0 z-50 bg-gray-900/80 backdrop-blur-md shadow-[0_0_15px_rgba(59,130,246,0.8)]">
-      <nav className="max-w-7xl h-12 mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="navigation max-w-7xl h-12 mx-auto px-6 py-4 flex items-center justify-between ml-4">
         
         
         <div className="flex items-center gap-2">
@@ -14,11 +14,11 @@ export default function Navbar() {
         </div>
 
         
-        <ul className="hidden md:flex items-center gap-8 text-lg font-semibold text-white">
+        <ul className="navigation  hidden md:flex items-center gap-8 text-lg font-semibold text-white">
           <li><a href="#home" className="hover:text-blue-600">Home</a></li>
           <li><a href="#about" className="hover:text-blue-600">About</a></li>
           <li><a href="#projects" className="hover:text-blue-600">Projects</a></li>
-          <li><a href="#profile" className="hover:text-blue-600">MySkills</a></li>
+          <li><a href="#profile" className="hover:text-blue-600">MyProfile</a></li>
           <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
         </ul>
 
@@ -49,7 +49,7 @@ export default function Navbar() {
           <li><a href="#home" className="hover:text-blue-600" onClick={() => setOpen(false)}>Home</a></li>
           <li><a href="#about" className="hover:text-blue-600" onClick={() => setOpen(false)}>About</a></li>
           <li><a href="#projects" className="hover:text-blue-600" onClick={() => setOpen(false)}>Projects</a></li>
-          <li><a href="#profile" className="hover:text-blue-600" onClick={() => setOpen(false)}>MySkills</a></li>
+          <li><a href="#profile" className="hover:text-blue-600" onClick={() => setOpen(false)}>MyProfile</a></li>
           <li><a href="#contact" className="hover:text-blue-600" onClick={() => setOpen(false)}>Contact</a></li>
         </ul>
       </div>

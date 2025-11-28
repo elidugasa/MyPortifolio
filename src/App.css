@@ -40,6 +40,9 @@ body {
   align-items: center;
   margin-left: 0.5rem;
 }
+.navigation{
+  margin-right: 1rem !important;
+}
 #home {
   background-image: url('assets/MyImage/heroback.png') !important;
   background-size: cover;              
@@ -71,9 +74,16 @@ padding:15px
   }
   .project{
      grid-template-columns: repeat(2, 1fr)  ;
+     
   }
   
+  
 }
+.caaards{
+    max-width: 400px !important;
+    align-self: center !important;
+    margin: 0 auto !important;
+  }
 @media screen and (min-width:1000px){
   .project{
     grid-template-columns: repeat(3, 1fr)  ;
